@@ -19,6 +19,8 @@ module.exports = {
           }
         }
 
+        var className = type === 'audio' ? 'NceBlock audio' : type === 'image' ? 'NceBlock image' : 'NceBlock';
+
         var elementStr = this.output.name === 'website' ?
           type === 'audio' ?
             `
@@ -30,7 +32,7 @@ module.exports = {
           : type === 'image' ? `<img src=${url} />` : null
         : null;
 
-        return `<div className="NceBlock">${elementStr}</div>`;
+        return `<div class=${className}>${elementStr}</div>`
       }
     }
   }
