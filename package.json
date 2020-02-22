@@ -1,7 +1,7 @@
 {
   "title": "nce",
   "name": "gitbook-plugin-nce",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Insert audios of New Concept English in your pages.",
   "main": "index.js",
   "engines": {
@@ -16,14 +16,14 @@
     "gitbook:content"
   ],
   "author": "若非",
-  "homepage": "https://github.com/GitbookIO/plugin-youtube",
+  "homepage": "https://github.com/smpower/gitbook-plugin-nce",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GitbookIO/plugin-youtube.git"
+    "url": "https://github.com/smpower/gitbook-plugin-nce.git"
   },
   "license": "Apache 2",
   "bugs": {
-    "url": "https://github.com/smpower/gitbook-plugin-youtube/issues"
+    "url": "https://github.com/smpower/gitbook-plugin-nce/issues"
   },
   "scripts": {
     "build-js": "gitbook-plugin build ./src/index.js ./_assets/plugin.js",
@@ -31,8 +31,7 @@
   },
   "devDependencies": {
     "eslint": "^3.7.1",
-    "eslint-config-gitbook": "^1.5.0",
-    "gitbook-plugin": "^4.0.0-alpha.1"
+    "eslint-config-gitbook": "^1.5.0"
   },
   "icon": "./icon.png",
   "gitbook": {
