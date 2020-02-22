@@ -1,12 +1,18 @@
 module.exports = {
   blocks: {
     nce: function(block) {
-      var audioId = block.kwargs.src;
-      var bookVersion = block.kwargs.book;
+      var src = block.kwargs.src;
+      var url = ''
+
+      if (src.includes('https://')) {
+        url = src;
+      } else {
+        url = `https://git.lug.ustc.edu.cn/smpower/${src}`
+      }
 
       return {
         isAudio: this.output.name === 'website',
-        url: `https://git.lug.ustc.edu.cn/smpower/nce${bookVersion}-aep/raw/master/${audioId}`
+        url: url
       };
     }
   }
