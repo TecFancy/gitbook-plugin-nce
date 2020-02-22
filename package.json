@@ -30,7 +30,7 @@
     "prepublish": "npm run build-js"
   },
   "devDependencies": {
-    "eslint": "^3.7.1",
+    "eslint": "^4.18.2",
     "eslint-config-gitbook": "^1.5.0",
     "gitbook-plugin": "^4.0.0-alpha.6"
   },
