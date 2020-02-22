@@ -1,0 +1,52 @@
+{
+  "title": "nce",
+  "name": "gitbook-plugin-nce",
+  "version": "0.0.1",
+  "description": "Insert audios of New Concept English in your pages.",
+  "main": "index.js",
+  "engines": {
+    "gitbook": ">=3.2.3"
+  },
+  "browser": "./_assets/plugin.js",
+  "ebook": "./_assets/plugin.js",
+  "keywords": [
+    "gitbook",
+    "plugin",
+    "nce",
+    "gitbook:content"
+  ],
+  "author": "若非",
+  "homepage": "https://github.com/GitbookIO/plugin-youtube",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GitbookIO/plugin-youtube.git"
+  },
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/smpower/gitbook-plugin-youtube/issues"
+  },
+  "scripts": {
+    "build-js": "gitbook-plugin build ./src/index.js ./_assets/plugin.js",
+    "prepublish": "npm run build-js"
+  },
+  "devDependencies": {
+    "eslint": "^3.7.1",
+    "eslint-config-gitbook": "^1.5.0",
+    "gitbook-plugin": "^4.0.0-alpha.1"
+  },
+  "icon": "./icon.png",
+  "gitbook": {
+    "blocks": {
+      "youtube": {
+        "title": "New Concept English",
+        "properties": {
+          "src": {
+            "type": "string",
+            "title": "URL of the audio",
+            "required": true
+          }
+        }
+      }
+    }
+  }
+}
