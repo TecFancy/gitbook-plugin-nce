@@ -1,8 +1,8 @@
 {
   "title": "nce",
   "name": "gitbook-plugin-nce",
-  "version": "0.0.5",
-  "description": "Insert audios of New Concept English in your pages.",
+  "version": "1.0.0",
+  "description": "Insert audios and images of New Concept English in your pages.",
   "main": "index.js",
   "engines": {
     "gitbook": ">=3.2.3"
