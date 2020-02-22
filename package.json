@@ -31,12 +31,13 @@
   },
   "devDependencies": {
     "eslint": "^3.7.1",
-    "eslint-config-gitbook": "^1.5.0"
+    "eslint-config-gitbook": "^1.5.0",
+    "gitbook-plugin": "^4.0.0-alpha.1"
   },
   "icon": "./icon.png",
   "gitbook": {
     "blocks": {
-      "youtube": {
+      "nce": {
         "title": "New Concept English",
         "properties": {
           "src": {
