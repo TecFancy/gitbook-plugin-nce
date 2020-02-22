@@ -7,8 +7,6 @@
   "engines": {
     "gitbook": ">=3.2.3"
   },
-  "browser": "./_assets/plugin.js",
-  "ebook": "./_assets/plugin.js",
   "keywords": [
     "gitbook",
     "plugin",
@@ -25,16 +23,6 @@
   "bugs": {
     "url": "https://github.com/smpower/gitbook-plugin-nce/issues"
   },
-  "scripts": {
-    "build-js": "gitbook-plugin build ./src/index.js ./_assets/plugin.js",
-    "prepublish": "npm run build-js"
-  },
-  "devDependencies": {
-    "eslint": "^3.7.1",
-    "eslint-config-gitbook": "^1.5.0",
-    "gitbook-plugin": "^4.0.0-alpha.6"
-  },
-  "icon": "./icon.png",
   "gitbook": {
     "blocks": {
       "nce": {
@@ -48,6 +36,5 @@
         }
       }
     }
-  },
-  "dependencies": {}
+  }
 }
