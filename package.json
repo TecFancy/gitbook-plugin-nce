@@ -1,7 +1,7 @@
 {
   "title": "nce",
   "name": "gitbook-plugin-nce",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Insert audios of New Concept English in your pages.",
   "main": "index.js",
   "engines": {
@@ -22,19 +22,5 @@
   "license": "Apache 2",
   "bugs": {
     "url": "https://github.com/smpower/gitbook-plugin-nce/issues"
-  },
-  "gitbook": {
-    "blocks": {
-      "nce": {
-        "title": "New Concept English",
-        "properties": {
-          "src": {
-            "type": "string",
-            "title": "URL of the audio",
-            "required": true
-          }
-        }
-      }
-    }
   }
 }

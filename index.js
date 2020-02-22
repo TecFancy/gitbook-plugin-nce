@@ -6,10 +6,10 @@ module.exports = {
       process: function(block) {
         var src = block.kwargs.src;
   
-        if (src.includes('https://')) {
+        if (src.includes('https://') && !block.kwargs.book) {
           url = src;
         } else {
-          url = `https://git.lug.ustc.edu.cn/smpower/${src}`
+          url = `https://git.lug.ustc.edu.cn/smpower/nce${block.kwargs.book}-aep/raw/master/${src}/`
         }
 
         var audioStr = this.output.name === 'website' ? `
